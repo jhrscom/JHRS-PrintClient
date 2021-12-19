@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="JHRS.WebFormWebPrint.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%:Page.Title %> - jhrs.com跨浏览器直接打印功能示例</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="Content/jhrs.css" rel="stylesheet" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form runat="server">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://jhrs.com" target="_blank">jhrs.com</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="https://jhrs.com" target="_blank">江湖人士</a>
+                        </li>
+                        <li>
+                            <a href="https://jhrs.com/zt/wa" target="_blank">国外网赚</a>
+                        </li>
+                        <li>
+                            <a href="https://znlive.com" target="_blank">码上生活</a>
+                        </li>
+                        <li>
+                            <a href="https://jhrs.com/vultr" target="_blank">便宜VPS</a>
+                        </li>
+                        <li>
+                            <a href="https://jhrs.com/namesilo-home" target="_blank">便宜域名</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p> &copy; <%=DateTime.Now.Year %> - jhrs.com 跨浏览器直接打印功能示例 - <a href="https://jhrs.com">国外网赚</a>
+            | 码上生活 - <a href="https://znlive.com">Code Life</a></p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>

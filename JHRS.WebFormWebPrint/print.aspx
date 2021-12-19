@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="print.aspx.cs" Inherits="JHRS.WebFormWebPrint.print" %>

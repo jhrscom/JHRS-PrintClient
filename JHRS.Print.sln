@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JHRS.CoreWebPrint", "JHRS.CoreWebPrint\JHRS.CoreWebPrint.csproj", "{2225DD74-24DF-4096-ABAA-80B132BA284E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E339495C-D3B7-48F7-B508-401B18C4FAEC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JHRS.PrintClient", "JHRS.PrintClient\JHRS.PrintClient.csproj", "{558BF10A-C69C-4C38-A3B2-6E206366A99B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JHRS.WebFormWebPrint", "JHRS.WebFormWebPrint\JHRS.WebFormWebPrint.csproj", "{9F6C984C-E273-4362-A917-072D6958D9D9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "JHRS.PrintClientSetup", "JHRS.PrintClientSetup\JHRS.PrintClientSetup.vdproj", "{9CD2B8F7-1A52-43AE-96BE-998E5CA646CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2225DD74-24DF-4096-ABAA-80B132BA284E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2225DD74-24DF-4096-ABAA-80B132BA284E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2225DD74-24DF-4096-ABAA-80B132BA284E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2225DD74-24DF-4096-ABAA-80B132BA284E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558BF10A-C69C-4C38-A3B2-6E206366A99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558BF10A-C69C-4C38-A3B2-6E206366A99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558BF10A-C69C-4C38-A3B2-6E206366A99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558BF10A-C69C-4C38-A3B2-6E206366A99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6C984C-E273-4362-A917-072D6958D9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6C984C-E273-4362-A917-072D6958D9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6C984C-E273-4362-A917-072D6958D9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6C984C-E273-4362-A917-072D6958D9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD2B8F7-1A52-43AE-96BE-998E5CA646CC}.Debug|Any CPU.ActiveCfg = Debug
+		{9CD2B8F7-1A52-43AE-96BE-998E5CA646CC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B157366D-177B-4F92-BF59-112C0DA031BD}
+	EndGlobalSection
+EndGlobal

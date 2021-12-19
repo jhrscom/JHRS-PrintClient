@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/25/2014 15:07:40" ReportInfo.Modified="12/18/2021 15:56:37" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary>
+    <TableDataSource Name="设备管理标牌" ReferenceName="打印数据源" DataType="System.Int32" Enabled="true">
+      <Column Name="序号" DataType="System.Int64"/>
+      <Column Name="设备名称" DataType="System.String"/>
+      <Column Name="标题" DataType="System.String"/>
+      <Column Name="规格" DataType="System.String"/>
+      <Column Name="型号" DataType="System.String"/>
+      <Column Name="生产厂家" DataType="System.String"/>
+      <Column Name="启用日期" DataType="System.DateTime"/>
+      <Column Name="序列号" DataType="System.String"/>
+      <Column Name="条码" DataType="System.String"/>
+      <Column Name="二维码" DataType="System.String"/>
+      <Column Name="责任人" DataType="System.String"/>
+      <Column Name="使用科室" DataType="System.String"/>
+      <Column Name="质保日期" DataType="System.DateTime"/>
+    </TableDataSource>
+    <Parameter Name="OrgName" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="76" PaperHeight="50" LeftMargin="2" TopMargin="2" RightMargin="2" BottomMargin="0">
+    <DataBand Name="Data1" Width="272.16" Height="144.21" CanGrow="true" CanShrink="true" DataSource="设备管理标牌">
+      <TextObject Name="Text1" Left="4.45" Top="46.25" Width="245.7" Height="21.17" CanBreak="false" Text="设备名称：[设备管理标牌.设备名称]" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text78" Left="4.45" Top="70.15" Width="141.75" Height="10.58" CanBreak="false" Text="规格型号：[设备管理标牌.规格]/[设备管理标牌.型号]" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text79" Left="4.55" Top="27.45" Width="141.75" Height="10.58" CanBreak="false" Text="卡片编码：[设备管理标牌.条码]" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text82" Left="150.3" Top="68.25" Width="113.4" Height="10.58" CanBreak="false" Text="启用日期：[设备管理标牌.启用日期]" Format="Custom" Format.Format="yyyy-MM-dd" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text83" Left="4.45" Top="111.95" Width="274.05" Height="11.34" CanBreak="false" Text="生产厂家：[设备管理标牌.生产厂家]" VertAlign="Center" Font="黑体, 7pt"/>
+      <BarcodeObject Name="Barcode2" Left="203.55" Top="89.4" Width="64.26" Height="54.81" AutoSize="false" DataColumn="设备管理标牌.二维码" Text="BH20160809" ShowText="false" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
+      <TextObject Name="Text85" Left="149.3" Top="27.35" Width="113.4" Height="10.58" CanBreak="false" Text="序列号：[设备管理标牌.序列号]" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text86" Left="4.45" Top="92.05" Width="141.75" Height="10.58" CanBreak="false" Text="使用科室：[设备管理标牌.使用科室]" VertAlign="Center" WordWrap="false" Font="黑体, 7pt"/>
+      <TextObject Name="Text87" Left="149.85" Top="82.15" Width="113.4" Height="10.58" CanBreak="false" Text="责任人：[设备管理标牌.责任人]" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text88" Left="1" Top="0.45" Width="274.05" Height="18.9" BeforePrintEvent="Text88_BeforePrint" CanBreak="false" Text="[设备管理标牌.标题]" HorzAlign="Center" VertAlign="Center" Font="黑体, 9pt, style=Bold"/>
+      <TextObject Name="Text89" Left="149.75" Top="49.7" Width="113.4" Height="10.58" CanBreak="false" Text="质保期：[设备管理标牌.质保日期]" Format="Custom" Format.Format="yyyy-MM-dd" VertAlign="Center" Font="黑体, 7pt"/>
+      <TextObject Name="Text90" Left="4.9" Top="127.85" Width="274.05" Height="11.34" CanBreak="false" Text="打印时间：[Date]" Format="Custom" Format.Format="yyyy年MM月dd HH时mm分ss秒" VertAlign="Center" Font="黑体, 7pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>
